@@ -1,0 +1,30 @@
+.container--outter {
+  width: 100%;
+}
+.container--inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  min-width: 600px;
+}
+.first-column {
+  width: 200px;
+  border: 1px solid black;
+  height: 400px;
+  padding: 1rem 1.5rem;
+}
+.second-column {
+  flex: 1 1 auto;
+  min-width: 100px;
+  border: 1px solid black;
+  padding: 1rem 1.5rem;
+}
+.third-column {
+  width: 300px;
+  border: 1px solid black;
+  height: 400px;
+  padding: 1rem 1.5rem;
+}
+.small-width {
+  width: 120px;
+}

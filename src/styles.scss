@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+  height: 100%;
+  width: 100;
+}
+
+.page-layout {
+  padding: 1.5rem 2rem;
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}

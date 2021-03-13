@@ -1,0 +1,34 @@
+<div class="page-layout">
+  <h1>Question 1</h1>
+  <div clss="container--outter">
+    <div class="container--inner">
+      <div class="first-column">
+        <mat-form-field class="small-width">
+          <mat-label>Input</mat-label>
+          <input matInput placeholder="Enter number" #numInput />
+        </mat-form-field>
+      </div>
+      <div class="second-column">
+        <mat-form-field class="small-width">
+          <mat-label>Select an option</mat-label>
+          <select matNativeControl #typeInput>
+            <option value="none">None</option>
+            <option value="isPrime">isPrime</option>
+            <option value="isFibonacci">isFibonacci</option>
+          </select>
+        </mat-form-field>
+      </div>
+      <div class="third-column">
+        <mat-form-field appearance="fill" class="small-width">
+          <mat-label>Result</mat-label>
+          <input
+            matInput
+            placeholder="Show result"
+            readonly
+            [value]="result$ | async"
+          />
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+</div>
